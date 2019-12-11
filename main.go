@@ -38,7 +38,7 @@ var group string
 func init() {
 	flag.BoolVar(&h, "h", false, "帮助")
 	flag.StringVar(&datadir, "D", "data", "设置数据存储路径")
-	flag.StringVar(&domain, "d", "http://127.0.0.1", "设置域名")
+	flag.StringVar(&domain, "d", "http://127.0.0.1:8080", "设置域名")
 	flag.IntVar(&port, "p", 8080, "设置端口")
 	flag.StringVar(&group, "g", "", "设置组名")
 	flag.Usage = usage

@@ -12,7 +12,7 @@ Options:
   -D string
         设置数据存储路径 (default "data")
   -d string
-        设置域名 (default "http://127.0.0.1")
+        设置域名 (default "http://127.0.0.1:8080")
   -g string
         设置组名
   -h    帮助
@@ -26,13 +26,13 @@ go run main.go -p 9090 -D "D:\\temp" -d "http://127.0.0.1:9090"
 ## 打包
 ```
 # 打包Windows(含压缩)
-SET GOOS=windows
 SET GOARCH=amd64
+SET GOOS=windows
 go build -o Godfs.exe -ldflags "-s -w" main.go
 
 # 打包Linux版本(含压缩)
-SET GOOS=linux
 SET GOARCH=amd64
+SET GOOS=linux
 go build -o Godfs -ldflags "-s -w" main.go
 
 
